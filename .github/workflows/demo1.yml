@@ -4,8 +4,8 @@ on:
     types: [opened, edited]
     branches:
       - main
-      - 'dev-*'
-      - 'feat/**'
+      - 'dev-*' #Targets all branches starting with dev-
+      - 'feat/**' #Targets multiple / in branches
   workflow_dispatch:
   push:
     branches:
